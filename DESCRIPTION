@@ -1,0 +1,15 @@
+Package: CS599
+Title: Hierarchical and K-Means Clustering
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alyssa",
+           family = "Stenberg",
+           role = c("aut", "cre"),
+           email = "ajs937@nau.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: use_mit_license("Alyssa Stenberg")
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
