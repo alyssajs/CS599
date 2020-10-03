@@ -17,5 +17,5 @@ observation b located at [ a,b ] and [ b,a ]
 Compute matrix of pairwise Euclidean distance between observations
 }
 \examples{
-pairwiseDistance(as.matrix(iris.dt[,1:4]))
+pairwiseDistance(as.matrix(iris[,1:4]))
 }

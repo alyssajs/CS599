@@ -20,6 +20,6 @@ Vector of nearest neighbors
 Computes K-nearest neighbors of given observation
 }
 \examples{
-distMat <- pairwiseDistance(iris.dt[, 1:4])
+distMat <- pairwiseDistance(iris[, 1:4])
 neighborsVec <- nearestNeighbors(distMat, 3, 2)
 }

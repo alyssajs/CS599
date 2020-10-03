@@ -18,6 +18,7 @@
 #' @export
 #'
 #' @examples
+#' library(data.table)
 #' set.seed(1)
 #' halfcircle <- function(r, center = c(0, 0), class, sign, N=150, noise=0.5) {
 #'  angle <- runif(N, 0, pi)
@@ -74,7 +75,7 @@ SPECC <- function(data.dt, numClust, numEigen, numNeighbors)
 #' @return Similarity matrix between observations
 #' @export
 #'
-#' @examples similarity(iris.dt[,1:4])
+#' @examples similarity(iris[,1:4])
 similarity <- function(data.matrix)
 {
   distMatrix <- pairwiseDistance(data.matrix)
@@ -102,8 +103,8 @@ similarity <- function(data.matrix)
 #' @return Adjacency matrix
 #' @export
 #'
-#' @examples distMat <- pairwiseDistance(iris.dt[, 1:4])
-#' similarityMat <- similarity(iris.dt[, 1:4])
+#' @examples distMat <- pairwiseDistance(iris[, 1:4])
+#' similarityMat <- similarity(iris[, 1:4])
 #' adjacency(distMat, similarityMat, 3)
 adjacency <- function(distance.mat, similarity.mat, K)
 {
@@ -135,7 +136,7 @@ adjacency <- function(distance.mat, similarity.mat, K)
 #' @return Vector of nearest neighbors
 #' @export
 #'
-#' @examples distMat <- pairwiseDistance(iris.dt[, 1:4])
+#' @examples distMat <- pairwiseDistance(iris[, 1:4])
 #' neighborsVec <- nearestNeighbors(distMat, 3, 2)
 nearestNeighbors <- function(distance.mat, point, K)
 {

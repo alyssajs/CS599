@@ -69,7 +69,7 @@ HCLUST <- function(data.matrix, K)
 #' observation b located at \[ a,b \] and \[ b,a \]
 #' @export
 #'
-#' @examples pairwiseDistance(as.matrix(iris.dt[,1:4]))
+#' @examples pairwiseDistance(as.matrix(iris[,1:4]))
 pairwiseDistance <- function(data.matrix) {
   #initialize matrix
   distMatrix <- matrix(data = NA, nrow = nrow(data.matrix),

@@ -25,6 +25,7 @@ as a parameter) using Euclidean distances. Uses K-means clustering on the
 eigenvectors.
 }
 \examples{
+library(data.table)
 set.seed(1)
 halfcircle <- function(r, center = c(0, 0), class, sign, N=150, noise=0.5) {
  angle <- runif(N, 0, pi)

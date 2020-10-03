@@ -18,5 +18,5 @@ Computes radial-kernel gram matrix to use as similarity matrix with scale
 parameter = 1 and Euclidean distance
 }
 \examples{
-similarity(iris.dt[,1:4])
+similarity(iris[,1:4])
 }

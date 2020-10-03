@@ -2,6 +2,7 @@
 # CS599
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.com/alyssajs/CS599.svg?branch=master)](https://travis-ci.com/alyssajs/CS599)
 <!-- badges: end -->
 
 This package includes two clustering algorithms (hierarchical and

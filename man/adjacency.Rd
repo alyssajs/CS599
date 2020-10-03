@@ -24,7 +24,7 @@ to its K-nearest neighbors and the similarity measures as provided by the
 similarity matrix are used as edge weights.
 }
 \examples{
-distMat <- pairwiseDistance(iris.dt[, 1:4])
-similarityMat <- similarity(iris.dt[, 1:4])
+distMat <- pairwiseDistance(iris[, 1:4])
+similarityMat <- similarity(iris[, 1:4])
 adjacency(distMat, similarityMat, 3)
 }
