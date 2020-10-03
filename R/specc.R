@@ -25,8 +25,7 @@
 #'  rad <- rnorm(N, r, noise)
 #'  data.table(
 #'    V1 = rad * cos(angle) + center[1],
-#'    V2 = sign * rad * sin(angle) + center[2],
-#'    class = factor(class))
+#'    V2 = sign * rad * sin(angle) + center[2]
 #' }
 #' X.dt <- rbind(
 #'  halfcircle(4, c(0, 0), 1, 1),
