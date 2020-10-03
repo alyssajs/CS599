@@ -166,7 +166,7 @@ nearestNeighbors <- function(distance.mat, point, K)
 #'
 #' @examples
 #' adjacency.mat = adjacency(pairwiseDistance(iris[,1:4]),
-#' similarity(iris[,1:4]))
+#' similarity(iris[,1:4]), 2)
 #' degree(adjacency.mat)
 degree <- function(adjacency.mat)
 {
