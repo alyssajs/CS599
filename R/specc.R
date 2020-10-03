@@ -179,7 +179,20 @@ degree <- function(adjacency.mat)
   return(degree)
 }
 
-#graph Laplacian computation
+
+#' Calculates graph Laplacian given adjacency and degree matrices
+#'
+#' @param adjacency.mat Adjacency matrix of graph
+#' @param degree.mat Matrix with degrees of vertices on diagonal
+#'
+#' @return Laplacian matrix = degree - adjacency
+#' @export
+#'
+#' @examples
+#' adjacency.mat <- adjacency(pairwiseDistance(iris[,1:4]), similarity(iris[,1:4],
+#' 2)
+#' degree.mat <- degree(adjacency.mat)
+#' laplacian.mat <- laplacian(adjacency.mat, degree.mat)
 laplacian <- function(adjacency.mat, degree.mat)
 {
   laplacian.mat <- degree.mat - adjacency.mat
