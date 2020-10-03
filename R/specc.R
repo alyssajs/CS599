@@ -186,9 +186,15 @@ laplacian <- function(adjacency.mat, degree.mat)
   return(laplacian.mat)
 }
 
-
-#euclidean distance matrix calculation
-
+#'  Compute matrix of pairwise Euclidean distance between observations
+#'
+#' @param data.matrix Data matrix of n observations
+#'
+#' @return nxn matrix with Euclidean distance between observation a and
+#' observation b located at \[ a,b \] and \[ b,a \]
+#' @export
+#'
+#' @examples pairwiseDistance(as.matrix(iris[,1:4]))
 pairwiseDistance <- function(data.matrix) {
   #initialize matrix
   distMatrix <- matrix(data = NA, nrow = nrow(data.matrix),
