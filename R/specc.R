@@ -26,6 +26,7 @@
 #'  data.table(
 #'    V1 = rad * cos(angle) + center[1],
 #'    V2 = sign * rad * sin(angle) + center[2]
+#'    )
 #' }
 #' X.dt <- rbind(
 #'  halfcircle(4, c(0, 0), 1, 1),
@@ -164,6 +165,9 @@ nearestNeighbors <- function(distance.mat, point, K)
 #' @export
 #'
 #' @examples
+#' adjacency.mat = adjacency(pairwiseDistance(iris[,1:4]),
+#' similarity(iris[,1:4]))
+#' degree(adjacency.mat)
 degree <- function(adjacency.mat)
 {
   degree <- matrix(0, nrow=nrow(adjacency.mat), ncol=nrow(adjacency.mat))

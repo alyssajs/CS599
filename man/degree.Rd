@@ -15,3 +15,8 @@ Matrix with degrees of vertex i on [ i, i ]
 \description{
 Cpmpute matrix with degree of each vertex on the diagonal
 }
+\examples{
+adjacency.mat = adjacency(pairwiseDistance(iris[,1:4]),
+similarity(iris[,1:4]))
+degree(adjacency.mat)
+}
