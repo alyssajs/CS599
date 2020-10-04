@@ -18,7 +18,7 @@ Laplacian matrix = degree - adjacency
 Calculates graph Laplacian given adjacency and degree matrices
 }
 \examples{
-adjacency.mat <- adjacency(pairwiseDistance(iris[1:50,1:4]), similarity(iris[1:50,1:4],2)
+adjacency.mat <- adjacency(pairwiseDistance(iris[1:50,1:4]), similarity(iris[1:50,1:4],2))
 degree.mat <- degree(adjacency.mat)
 laplacian.mat <- laplacian(adjacency.mat, degree.mat)
 }
