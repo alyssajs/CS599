@@ -157,7 +157,7 @@ nearestNeighbors <- function(distance.mat, point, K)
 }
 
 #compute the degree matrix
-#' Cpmpute matrix with degree of each vertex on the diagonal
+#' Compute matrix with degree of each vertex on the diagonal
 #'
 #' @param adjacency.mat Adjacency matrix
 #'
