@@ -17,6 +17,6 @@ Compute matrix with degree of each vertex on the diagonal
 }
 \examples{
 adjacency.mat = adjacency(pairwiseDistance(iris[1:50,1:4]),
-similarity(iris[,1:4]), 2)
+similarity(iris[1:50,1:4]), 2)
 degree(adjacency.mat)
 }
