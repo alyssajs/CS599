@@ -2,7 +2,7 @@
 % Please edit documentation in R/specc.R
 \name{degree}
 \alias{degree}
-\title{Cpmpute matrix with degree of each vertex on the diagonal}
+\title{Compute matrix with degree of each vertex on the diagonal}
 \usage{
 degree(adjacency.mat)
 }
@@ -13,10 +13,10 @@ degree(adjacency.mat)
 Matrix with degrees of vertex i on [ i, i ]
 }
 \description{
-Cpmpute matrix with degree of each vertex on the diagonal
+Compute matrix with degree of each vertex on the diagonal
 }
 \examples{
-adjacency.mat = adjacency(pairwiseDistance(iris[,1:4]),
-similarity(iris[,1:4]))
+adjacency.mat = adjacency(pairwiseDistance(iris[1:50,1:4]),
+similarity(iris[,1:4]), 2)
 degree(adjacency.mat)
 }

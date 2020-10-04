@@ -75,7 +75,7 @@ SPECC <- function(data.dt, numClust, numEigen, numNeighbors)
 #' @return Similarity matrix between observations
 #' @export
 #'
-#' @examples similarity(iris[,1:4])
+#' @examples similarity(iris[1:50,1:4])
 similarity <- function(data.matrix)
 {
   distMatrix <- pairwiseDistance(data.matrix)
@@ -103,8 +103,8 @@ similarity <- function(data.matrix)
 #' @return Adjacency matrix
 #' @export
 #'
-#' @examples distMat <- pairwiseDistance(iris[, 1:4])
-#' similarityMat <- similarity(iris[, 1:4])
+#' @examples distMat <- pairwiseDistance(iris[1:50, 1:4])
+#' similarityMat <- similarity(iris[1:50, 1:4])
 #' adjacency(distMat, similarityMat, 3)
 adjacency <- function(distance.mat, similarity.mat, K)
 {
@@ -136,7 +136,7 @@ adjacency <- function(distance.mat, similarity.mat, K)
 #' @return Vector of nearest neighbors
 #' @export
 #'
-#' @examples distMat <- pairwiseDistance(iris[, 1:4])
+#' @examples distMat <- pairwiseDistance(iris[1:50, 1:4])
 #' neighborsVec <- nearestNeighbors(distMat, 3, 2)
 nearestNeighbors <- function(distance.mat, point, K)
 {
@@ -165,7 +165,7 @@ nearestNeighbors <- function(distance.mat, point, K)
 #' @export
 #'
 #' @examples
-#' adjacency.mat = adjacency(pairwiseDistance(iris[,1:4]),
+#' adjacency.mat = adjacency(pairwiseDistance(iris[1:50,1:4]),
 #' similarity(iris[,1:4]), 2)
 #' degree(adjacency.mat)
 degree <- function(adjacency.mat)
@@ -189,7 +189,7 @@ degree <- function(adjacency.mat)
 #' @export
 #'
 #' @examples
-#' adjacency.mat <- adjacency(pairwiseDistance(iris[,1:4]), similarity(iris[,1:4],
+#' adjacency.mat <- adjacency(pairwiseDistance(iris[1:50,1:4]), similarity(iris[,1:4],
 #' 2)
 #' degree.mat <- degree(adjacency.mat)
 #' laplacian.mat <- laplacian(adjacency.mat, degree.mat)
@@ -207,7 +207,7 @@ laplacian <- function(adjacency.mat, degree.mat)
 #' observation b located at \[ a,b \] and \[ b,a \]
 #' @export
 #'
-#' @examples pairwiseDistance(as.matrix(iris[,1:4]))
+#' @examples pairwiseDistance(as.matrix(iris[1:50,1:4]))
 pairwiseDistance <- function(data.matrix) {
   #initialize matrix
   distMatrix <- matrix(data = NA, nrow = nrow(data.matrix),
