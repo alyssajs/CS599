@@ -1,8 +1,8 @@
 
-# CS599
+# MLClusteringAlgorithms
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.com/alyssajs/CS599.svg?branch=master)](https://travis-ci.com/alyssajs/CS599)
+[![Travis build status](https://travis-ci.com/alyssajs/MLClusteringAlgorithmssvg?branch=master)](https://travis-ci.com/alyssajs/MLClusteringAlgorithms)
 <!-- badges: end -->
 
 This package includes two clustering algorithms (hierarchical and
@@ -11,8 +11,8 @@ functions.
 
 ## Installation
 
-You can install the released version of CS599 by using the command
-remotes::install_github("alyssajs/CS599")
+You can install the released version of MLClusteringAlgorithms by using the command
+remotes::install_github("alyssajs/MLClusteringAlgorithms")
 ```
 
 ## Example
@@ -20,7 +20,7 @@ remotes::install_github("alyssajs/CS599")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(CS599)
+library(MLClusteringAlgorithms)
 ## basic example code
 HCLUST(iris[,1:4], 3)
 
